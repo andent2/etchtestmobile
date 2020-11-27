@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Etch-a-Sketch</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" 
+    rel="stylesheet" />
+
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Etch-A-Sketch</h1>
+
+        <div id="toolBar">
+
+
+            <div class="tool">
+                <label for="chooseDrawColorButton">Draw Color</label>
+                <input id="chooseDrawColorButton" type="color" value="#000000"></input>
+            </div>
+
+
+            <div class="tool">
+                <label for="chooseFrameColorButton">Frame Color</label>
+                <input id="chooseFrameColorButton" type="color" value="#b41414"></input>
+            </div>
+
+            <div class="tool">
+                <label for="chooseBackgroundColorButton">Background Color</label>
+                <input id="chooseBackgroundColorButton" type="color" value="#ffffff"></input>
+            </div>
+
+
+
+            <div class="tool">
+                <label for="colorMode">Color <br>Mode</label>
+                <div class="custom-dropdown">
+                    <select name="colorName" id="colorMode">
+
+                        <option value="solid">Solid</option>
+                        <option value="shade">Shade</option>
+                        <option value="random">Random</option>
+
+                        <option value="ocean">Ocean</option>
+                        <option value="sand">Sand</option>
+                        <option value="sky">Sky</option>
+                        <option value="clouds">Clouds</option>
+                        <option value="trees">Trees</option>
+
+                        <option value="erase">Erase</option>
+
+                    </select>
+                </div>
+            </div>
+
+            <div class="tool">
+                <label for="gridLineSwitch">Grid Lines</label>
+
+                <label class="switch">
+                    <input type="checkbox" id="gridLineSwitch" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="tool">
+                <div class="button" id="setGridSizeButton">
+                    <text>Set Grid Size</text>
+                </div>
+            </div>
+
+            <div class="tool">
+                <div class="button" id="clearScreenButton">
+                    <text>Clear Screen</text>
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+    </header>
+
+    <div id="mainView">
+
+        <div id="etchASketchScreen">
+
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="scripts.js"></script>
+
+</body>
+
+</html>
